@@ -1,3 +1,4 @@
+#main.yml
 name: Main Taski workflow
 
 on:
@@ -88,4 +89,5 @@ jobs:
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
           tags:  ${{ secrets.DOCKER_USERNAME }}/taski_backend:latest
+
 
